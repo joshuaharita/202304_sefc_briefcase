@@ -1,41 +1,56 @@
 /* css */
 
+a {
+    color: white; /* for browsers that don't support 'inherit' as a color value */
+    color: inherit;
+}
 a:link{
-    text-decoration: none!important;
+    text-decoration: none!important;  /*remove underline on link/nav button */
 }
 
 *{
-    padding : 0;
+    font-family: Helvetica, sans-serif;
     margin : 0;
     box-sizing: border-box;
 }
+/* header */
 h1{
     text-align: center;
     margin-top: 20px;
 }
 .deskripsi{
-    margin: 10px 0;
+    margin: 16px 0;
     text-align: center;
 }
+/* navigasi menu */
 .menu{
-    color: white;
-    padding: 5px 5px;
+    border-radius: 5px;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 4px;
 }
 .menu1{
-    text-decoration: none;
+    color: white;
     background-color: #2596be;    
     text-align: center;
-    padding: 6px;
     width: 100%;
-    color:white;
+    padding: 16px;
 }
 .menu2{
-    text-decoration: none;
     text-align: center;
-    padding: 6px;
+    padding: 16px;
+}
+/* body */
+h2{
+    text-align: center;
+    padding: 38px 0;
+    background-color: #2596be;
+    color: white;
+}
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
