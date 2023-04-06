@@ -3,6 +3,8 @@
     <head>
         <title>Welcome to Katik</title>
         <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+
         <h1>Welcome to Katik</h1>
         <div class="deskripsi">
             <p>Hi sobat selamat datang di Katik:)</p>
@@ -17,23 +19,29 @@
         <section class="card">
             <h2>Luas Segitiga</h2>
             <img class="image" src="assets/segitiga.png" width="300px" >
-            <div>
+            <div class="div1">
                 <p>Rumus Luas Segitiga yaitu :</p>
-                <p>L= 1/2*a*t</p>
+                <p class="rumus">L = 1/2 * a * t</p>
                 <p>Dimana:</p>
                 <p>L:luas</p>
                 <p>a: panjang alas</p>
                 <p>t: tinggi segitiga</p>
             </div>
-            <div class="form-hitung">
-                <h2>Hitung Luas Segitiga</h2>
-                <form action="">
-                    <input type="text">
-                    <input type="text">
-                    <button type="submit">Hitung</button>
+            <div>
+                <h3>Hitung Luas Segitiga</h3>
+                <form class="form-hitung" action="">
+                    <input id="alas" class="form1" type="float">
+                    <input id="tinggi" class="form2" type="float">                                        
                 </form>
-
-            </div>
+                <div>
+                    <p>L=1/2*a*t</p>
+                    <p>L=1/2* <span id="alas"></span> </p>                    
+                    <p>L = <span id="result"></span></p>
+                    <p></p>
+                </div>
+                <button class="hitunga" onclick="luastri()" type="submit">Hitung</button>
+                <input class="resetb" onclick="function()" type="reset"><br>
+            </div>        
         </section>
         <section></section>
     </body>
